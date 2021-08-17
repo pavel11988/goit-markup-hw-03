@@ -1,0 +1,294 @@
+:root {
+  --background-dark-gray-color: #2f303a;
+  --background-gray-color: #f5f4fa;
+  --text-blue-color: #2196f3;
+  --btn-hover-blue-color: #188ce8;
+  --text-black-color: #212121; /* Primary text color */
+  --text-gray-color: #757575;
+  --text-color-white-transparent: rgba(255, 255, 255, 0.6);
+  --white-color: #ffffff; /* Primaty background c  */
+}
+/* ----------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--text-black-color);
+  background-color: var(--white-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  border: 2px solid green;
+}
+
+/* ----------------- */
+
+/* Шапка и Футер*/
+
+.studio-header {
+  color: var(--text-black-color);
+}
+
+.studio-footer {
+  color: var(--white-color);
+}
+
+.header-logo,
+.footer-logo {
+  color: var(--text-blue-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.nav-li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.current {
+  color: var(--text-blue-color);
+}
+
+.contacts-li {
+  color: var(--text-gray-color);
+  text-decoration: none;
+}
+
+.header-nav .nav-li:hover,
+.header-nav .nav-li:focus,
+.header-contacts .contacts-li:hover,
+.header-contacts .contacts-li:focus,
+.footer-li:hover,
+.footer-li:focus {
+  color: var(--text-blue-color);
+}
+
+.footer {
+  background-color: var(--background-dark-gray-color);
+  text-decoration: none;
+}
+
+.footer-adreess {
+  color: var(--white-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-li {
+  color: var(--text-color-white-transparent);
+  text-decoration: none;
+}
+
+/* Основной контент */
+
+/* "Герой" */
+
+.hero {
+  margin-bottom: 94px;
+
+  background-color: var(--background-dark-gray-color);
+
+  text-align: center;
+}
+
+.hero > .hero-title {
+  margin-bottom: 30px;
+
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+
+  border-radius: 4px;
+  background-color: var(--text-blue-color);
+  color: var(--white-color);
+  border: 1px solid transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--btn-hover-blue-color);
+  color: var(--white-color);
+}
+
+/* Секция: Преимущества организации */
+.section.main-advantages {
+  margin-bottom: 94px;
+}
+
+.main-advantages .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.main-advantages .description {
+  margin: 0;
+
+  color: var(--text-gray-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*Секция: Чем мы занимаемся*/
+
+.section.working {
+  margin-bottom: 94px;
+}
+
+.section.working > .section-title {
+  margin-bottom: 50px;
+}
+
+/* Секция: Наша команда + проэкты с Портфолио (portfolio.html) */
+.section.personal {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--background-gray-color);
+  text-align: center;
+}
+
+.personal-card .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.personal-card .description {
+  margin-bottom: 30px;
+}
+
+.section.personal .section-title {
+  margin-bottom: 50px;
+}
+
+.personal-card .title,
+.personal-card .description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.personal-card .description,
+.projects-card .description {
+  color: var(--text-gray-color);
+
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.projects-card .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Фильтр */
+.projects-card {
+  text-align: center;
+}
+
+.filter-list {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.filter-list .button {
+  padding: 6px 22px;
+
+  background-color: var(--background-gray-color);
+  color: var (--text-black-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+  background-color: var(--text-blue-color);
+  color: var(--white-color);
+}
+
+.projects-card > .title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.projects-card > .description {
+  margin-bottom: 20px;
+}
