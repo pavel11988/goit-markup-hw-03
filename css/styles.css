@@ -120,7 +120,11 @@ ul {
   text-decoration: none;
 }
 
-.current {
+.nav-link:visited {
+  color: var(--text-black-color);
+}
+
+.nav-link.current {
   color: var(--text-blue-color);
 }
 
