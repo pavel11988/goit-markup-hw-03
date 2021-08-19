@@ -342,6 +342,8 @@ ul {
 /* Фильтр */
 .filter-list {
   padding-top: 94px;
+  margin-bottom: 50px;
+
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -377,11 +379,11 @@ ul {
 }
 
 .projects-list {
-  padding-top: 50px;
-  padding-bottom: 94px;
-
   display: flex;
   flex-wrap: wrap;
+  flex-basis: auto;
+
+  padding-bottom: 94px;
 }
 
 .projects-card {
